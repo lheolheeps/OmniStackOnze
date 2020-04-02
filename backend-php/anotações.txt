@@ -1,0 +1,27 @@
+SLIM
+
+Obter Parametros 
+$request->getParams(); [Todos]
+$request->getParam(*nome*); [Especifico]
+$request->getParsedBody(); [Post Body]
+$request->getQueryParams(); [Query]
+
+Obter Atributos - /{param}
+$request->getAttribute(*nome*); [Especifico]
+$args; [Todos]
+
+Escrever na Pagina 
+$response->write(*conteudo*);
+
+Retornar JSON
+$response->withJson(*json*);
+
+Redirecionar
+$response->withRedirect(*caminho*);
+
+Definir Status
+$response->withStatus(*status*);
+
+Obter Caminho
+//this acessa o container
+$this->router->pathFor(*nome*);
